@@ -19,7 +19,7 @@ export class AuthService{
                 // call another method
                 return this.login({email, password});
             } else {
-               return  userAccount;
+               return  null;
             }
         } catch (error) {
             console.log("Appwrite serive :: createaccount :: error", error);
